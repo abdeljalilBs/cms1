@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile - E-Commerce</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🛍️ ShopHub</div>
+            <div class="nav-links">
+                <a href="../home/index.html">Home</a>
+                <a href="../shop/index.html">Shop</a>
+                <a href="../cart/index.html">Cart <span id="cartCount" class="badge">0</span></a>
+                <a href="../profile/index.html" class="active">Profile</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="profile-header">
+            <div class="avatar">👤</div>
+            <div class="user-info">
+                <h1 id="userName">User Name</h1>
+                <p id="userEmail">user@example.com</p>
+            </div>
+            <button class="btn-logout" id="logoutBtn">Logout</button>
+        </div>
+        
+        <div class="profile-section">
+            <h2>Order History</h2>
+            <div class="order-list" id="orderList">
+                <!-- Orders will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 ShopHub. All rights reserved.</p>
+    </footer>
+    
     <script src="index.js"></script>
 </body>
 </html>
