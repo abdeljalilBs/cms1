@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bag - ShopHub</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🛍 ShopHub</div>
+            <div class="nav-links">
+                <a href="../home/index.html">Home</a>
+                <a href="../shop/index.html">Shop</a>
+                <a href="../cart/index.html" class="active">Bag <span id="cartCount" class="badge">0</span></a>
+                <a href="../profile/index.html">Profile</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Your Bag</h1>
+        
+        <div class="cart-content">
+            <div class="cart-items-section">
+                <div class="cart-header">
+                    <div class="header-product">Product</div>
+                    <div class="header-details">Description</div>
+                    <div class="header-quantity">Quantity</div>
+                    <div class="header-price">Price</div>
+                    <div class="header-action">Delete</div>
+                </div>
+                
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be loaded here -->
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <div class="summary-header">
+                    <h2>Order Summary</h2>
+                </div>
+                <div class="summary-content">
+                    <div class="summary-row">
+                        <span>2 Products</span>
+                        <span id="subtotal">$64.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>$3.00</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="total">$67.00</span>
+                    </div>
+                    <button class="btn-checkout" id="checkoutBtn">
+                        <i class="fas fa-lock"></i>
+                        Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 ShopHub. All rights reserved.</p>
+    </footer>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
