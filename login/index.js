@@ -1,5 +1,5 @@
 if (localStorage.getItem('isLoggedIn') === 'true') {
-    window.location.href = '/home';
+    window.location.href = '/home/index.html';
 }
 
 document.getElementById('loginForm').addEventListener('submit', function(e) {
