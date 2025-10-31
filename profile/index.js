@@ -1,6 +1,6 @@
 // Check if user is logged in
 if (localStorage.getItem('isLoggedIn') !== 'true') {
-    window.location.href = '/login/index.html';
+    window.location.href = '/login';
 }
 
 // Update cart count
@@ -28,7 +28,7 @@ function loadOrderHistory() {
             <div class="no-orders">
                 <div class="no-orders-icon">📦</div>
                 <p>No orders yet</p>
-                <a href="../shop/index.html" class="btn-shop">Start Shopping</a>
+                <a href="/shop" class="btn-shop">Start Shopping</a>
             </div>
         `;
         return;
@@ -69,7 +69,7 @@ document.getElementById('logoutBtn').addEventListener('click', function() {
         localStorage.removeItem('isLoggedIn');
         localStorage.removeItem('userEmail');
         localStorage.removeItem('userName');
-        window.location.href = '/login/index.html';
+        window.location.href = '/login';
     }
 });
 

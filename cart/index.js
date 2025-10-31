@@ -1,6 +1,6 @@
 // Check if user is logged in
 if (localStorage.getItem('isLoggedIn') !== 'true') {
-    window.location.href = '/login/index.html';
+    window.location.href = '/login';
 }
 
 // Update cart count
