@@ -1,5 +1,5 @@
 if (localStorage.getItem('isLoggedIn') === 'true') {
-    window.location.href = '../home/index.html';
+    window.location.href = '/home/index.html';
 }
 
 document.getElementById('loginForm').addEventListener('submit', function(e) {
@@ -16,6 +16,6 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         localStorage.setItem('userName', email.split('@')[0]);
         
         // Redirect to home page
-        window.location.href = '../home/index.html';
+        window.location.href = '/home/index.html';
     }
 });
