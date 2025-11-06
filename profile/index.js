@@ -28,7 +28,7 @@ function loadOrderHistory() {
             <div class="no-orders">
                 <div class="no-orders-icon">📦</div>
                 <p>No orders yet</p>
-                <a href="cms1/shop/index.html" class="btn-shop">Start Shopping</a>
+                <a href="../shop/index.html" class="btn-shop">Start Shopping</a>
             </div>
         `;
         return;
