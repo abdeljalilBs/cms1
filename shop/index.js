@@ -1,10 +1,6 @@
 // Check if user is logged in
 if (localStorage.getItem('isLoggedIn') !== 'true') {
-<<<<<<< HEAD
-    window.location.href = '/login';
-=======
     window.location.href = '../login/index.html';
->>>>>>> 0bf4ef910b880ad50ed0807a49a2d7af90acf222
 }
 
 // All products data
