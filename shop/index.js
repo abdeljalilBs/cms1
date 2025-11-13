@@ -1,18 +1,18 @@
 // Check if user is logged in
 if (localStorage.getItem('isLoggedIn') !== 'true') {
-    window.location.href = '/login';
+    window.location.href = '../login/index.html';
 }
 
 // All products data
 const allProducts = [
-    { id: 1, name: 'Wireless Headphones', price: 79.99, emoji: '🎧' },
-    { id: 2, name: 'Smart Watch', price: 199.99, emoji: '⌚' },
-    { id: 3, name: 'Laptop', price: 999.99, emoji: '💻' },
-    { id: 4, name: 'Camera', price: 549.99, emoji: '📷' },
-    { id: 5, name: 'Smartphone', price: 699.99, emoji: '📱' },
-    { id: 6, name: 'Tablet', price: 449.99, emoji: '📲' },
-    { id: 7, name: 'Gaming Console', price: 399.99, emoji: '🎮' },
-    { id: 8, name: 'Keyboard', price: 89.99, emoji: '⌨️' }
+    { id: 1, name: 'Wireless Headphones', price: 79.99, image:'assets/OIP.webp'},
+    { id: 2, name: 'Smart Watch', price: 199.99, image:'assets/Smartwatch.jpg' },
+    { id: 3, name: 'Laptop', price: 999.99, image:'assets/laptop.jpg' },
+    { id: 4, name: 'Camera', price: 549.99, image:'assets/cameracanon.webp' },
+    { id: 5, name: 'Apple Iphone 17', price: 900, image:'assets/iphone_17.webp' },
+    { id: 6, name: 'Ipad pro 6', price: 999, image:'assets/ipad.jpg' },
+    { id: 7, name: 'Gaming Console', price: 399.99, image:'assets/gamingconsole.jpg' },
+    { id: 8, name: 'Keyboard', price: 89.99, image:'assets/keyboard.webp' }
 ];
 
 // Update cart count
@@ -29,7 +29,7 @@ function renderProducts() {
         const card = document.createElement('div');
         card.className = 'product-card';
         card.innerHTML = `
-            <div class="product-image">${product.emoji}</div>
+            <img src="${product.image}" alt="${product.name}" class="product-image">
             <div class="product-info">
                 <div class="product-name">${product.name}</div>
                 <div class="product-price">$${product.price}</div>
