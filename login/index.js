@@ -10,6 +10,10 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const password = document.getElementById('password').value.trim();
     // Basic validation
     if (email && password) {
+        if (password.length < 4) {
+        passwordError.textContent = "Le mot de passe doit contenir au moins 4 caractères.";
+        return; // Empêche la connexion
+        }
         // Save user data to localStorage
         localStorage.setItem('isLoggedIn', 'true');
         localStorage.setItem('userEmail', email);
