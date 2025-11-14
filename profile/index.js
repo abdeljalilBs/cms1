@@ -1,6 +1,6 @@
 // Check if user is logged in
 if (localStorage.getItem('isLoggedIn') !== 'true') {
-    window.location.href = '../login/index.html';
+    window.location.href = '/login';
 }
 
 // Update cart count
@@ -66,10 +66,8 @@ function loadOrderHistory() {
 // Logout
 document.getElementById('logoutBtn').addEventListener('click', function() {
     if (confirm('Are you sure you want to logout?')) {
-        localStorage.removeItem('isLoggedIn');
-        localStorage.removeItem('userEmail');
-        localStorage.removeItem('userName');
-        window.location.href = '../login/index.html';
+        localStorage.clear();
+        window.location.href = '/';
     }
 });
 
